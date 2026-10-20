@@ -20,7 +20,7 @@ export const EXPERIENCE: ExperienceItem[] = [
     period: "May 2026 – Present",
     location: "Bengaluru, India",
     start: "2026-05",
-    url: "https://www.fynmobility.com/",
+    url: "https://www.fynmobility.com/technology#infynity",
     color: "#0a84ff",
     current: true,
     summary: "Shipping Infynity's web presence and the SDK integrations, attribution, and notifications behind its mobile app.",
