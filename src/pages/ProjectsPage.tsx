@@ -1,6 +1,7 @@
 import { useState, type CSSProperties } from "react";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, GitPullRequest } from "lucide-react";
 import { GitHubIcon } from "@/components/BrandIcons";
+import { OPEN_SOURCE, type OpenSourceRepo } from "@/data/experience";
 import { PROJECTS, type ProjectItem } from "@/data/projects";
 import { SITE } from "@/data/site";
 import { AppWindow } from "@/shell/AppWindow";
@@ -65,6 +66,51 @@ function FeaturedCard({ project, large = false }: { project: ProjectItem; large?
   );
 }
 
+function ContributionRow({ repo }: { repo: OpenSourceRepo }) {
+  const prCount = repo.contributions.reduce((n, c) => n + c.prs.length, 0);
+  const merged = repo.contributions.filter((c) => c.merged).length;
+  return (
+    <details className="store-row">
+      <summary>
+        <span className="app-tile" style={{ width: 56, height: 56, background: "linear-gradient(145deg, #2f3542, #0d1117)" }} aria-hidden="true">
+          <GitPullRequest size={27} strokeWidth={1.9} />
+        </span>
+        <span className="store-row-text">
+          <span className="store-row-title">{repo.name}</span>
+          <span className="store-row-tagline">
+            {prCount} PR{prCount === 1 ? "" : "s"} · {merged}/{repo.contributions.length} merged
+          </span>
+          <span className="store-row-cat">{repo.repo}</span>
+        </span>
+        <div className="get-buttons">
+          <a className="view-link" href={repo.url} target="_blank" rel="noopener noreferrer" aria-label={`View ${repo.name} on GitHub`}>
+            VIEW
+          </a>
+        </div>
+      </summary>
+      <div className="store-row-details">
+        <p>{repo.blurb}</p>
+        <ul className="store-contribs">
+          {repo.contributions.map((c) => (
+            <li key={c.title}>
+              <span className="store-contrib-head">
+                <span className="store-contrib-title">{c.title}</span>
+                <span className={`chip ${c.merged ? "chip-live" : "chip-oss"}`}>{c.merged ? "Merged" : "Open"}</span>
+                {c.prs.map((pr) => (
+                  <a key={pr.number} href={pr.url} target="_blank" rel="noopener noreferrer">
+                    #{pr.number}
+                  </a>
+                ))}
+              </span>
+              <span className="store-contrib-detail">{c.detail}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </details>
+  );
+}
+
 export function ProjectsPage() {
   const [tab, setTab] = useState<Tab>("discover");
   const list = tab === "oss" ? PROJECTS.filter((p) => p.status.includes("Open source")) : PROJECTS;
@@ -101,6 +147,29 @@ export function ProjectsPage() {
               ))}
             </div>
           </div>
+        ) : null}
+
+        {tab === "oss" ? (
+          <section className="store-section">
+            <div className="store-section-head">
+              <h3>Contributions</h3>
+              <a
+                href={`https://github.com/pulls?q=is%3Apr+author%3A${SITE.githubUser}+-user%3A${SITE.githubUser}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                See All <ArrowUpRight size={14} />
+              </a>
+            </div>
+
+            <ul className="store-list">
+              {OPEN_SOURCE.map((repo) => (
+                <li key={repo.repo}>
+                  <ContributionRow repo={repo} />
+                </li>
+              ))}
+            </ul>
+          </section>
         ) : null}
 
         <section className="store-section">
