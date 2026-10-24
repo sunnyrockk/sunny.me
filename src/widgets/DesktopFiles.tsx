@@ -17,6 +17,7 @@ type DesktopFile =
 
 const FILES: DesktopFile[] = [
   { kind: "image", name: "me.jpg", src: portrait, alt: "Sunny Mall" },
+  { kind: "image", name: "dp.jpg", src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dp-nbi1Be1kacBEpIXwT4KHxL6VEmCiVQ.jpg", alt: "Sunny Mall by a mountain lake" },
   { kind: "pdf", name: "resume.pdf", href: SITE.resume },
   { kind: "folder", name: "TravelBoost", href: "https://github.com/sunnyrockk/Travel-boost", external: true },
   { kind: "folder", name: "projects", href: "/projects" },
