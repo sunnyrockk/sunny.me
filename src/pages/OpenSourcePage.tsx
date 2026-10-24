@@ -26,7 +26,7 @@ function useTyped(text: string, enabled: boolean) {
 function Prompt() {
   return (
     <span className="term-prompt">
-      <span className="term-user">vivek@macbook</span> <span className="term-path">~/open-source</span> <span className="term-sigil">%</span>{" "}
+      <span className="term-user">sunny@macbook</span> <span className="term-path">~/open-source</span> <span className="term-sigil">%</span>{" "}
     </span>
   );
 }
