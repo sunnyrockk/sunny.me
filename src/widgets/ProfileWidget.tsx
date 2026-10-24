@@ -1,5 +1,5 @@
 import { MapPin } from "lucide-react";
-const portrait = "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-10-24%20at%208.15.41%E2%80%AFPM-QTBWrtk6Qpvl7ryGuqK5KE30SCBeQr.png";
+const portrait = "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dp-Pluardnz7PPy9RkQoXcfcIGt7RfFLy.jpg";
 import { GitHubIcon, LinkedInIcon } from "@/components/BrandIcons";
 import { SITE } from "@/data/site";
 
