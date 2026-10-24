@@ -23,7 +23,10 @@ export function ProfileWidget() {
           ))}
         </ul>
         <div className="profile-actions">
-          <a className="btn-blue" href={`mailto:${SITE.email}`}>
+          <a
+            className="btn-blue"
+            href={`mailto:${SITE.email}?subject=${encodeURIComponent("Hello Sunny")}`}
+          >
             Say hi
           </a>
           <a className="btn-glass" href={SITE.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
