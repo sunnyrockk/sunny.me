@@ -23,7 +23,7 @@ afterEach(() => {
 describe("routes", () => {
   it("renders the desktop at /", async () => {
     renderAt("/");
-    expect(await screen.findByRole("heading", { name: "Sunny Mall, Full-Stack Developer" })).toBeInTheDocument();
+    expect(await screen.findByRole("heading", { name: "Sunny Mall, Software Developer" })).toBeInTheDocument();
     expect(screen.getByRole("button", { name: "Open resume.pdf" })).toBeInTheDocument();
   });
 

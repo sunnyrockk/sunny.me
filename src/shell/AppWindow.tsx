@@ -19,7 +19,7 @@ export function AppWindow({ title, toolbar, className = "", children }: AppWindo
   useEffect(() => {
     document.title = `${title} · Sunny Mall`;
     return () => {
-      document.title = "Sunny Mall - Full-Stack Developer";
+      document.title = "Sunny Mall - Software Developer";
     };
   }, [title]);
 

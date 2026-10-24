@@ -12,7 +12,7 @@ export function HomePage() {
   const reduce = useReducedMotion();
 
   useEffect(() => {
-    document.title = "Sunny Mall - Full-Stack Developer";
+    document.title = "Sunny Mall - Software Developer";
   }, []);
 
   return (
@@ -24,7 +24,7 @@ export function HomePage() {
       exit={reduce ? undefined : { opacity: 0 }}
       transition={{ duration: 0.25 }}
     >
-      <h1 className="sr-only">Sunny Mall, Full-Stack Developer</h1>
+      <h1 className="sr-only">Sunny Mall, Software Developer</h1>
       <div className="desktop-widgets">
         <div className="widget-col">
           <ProfileWidget />
