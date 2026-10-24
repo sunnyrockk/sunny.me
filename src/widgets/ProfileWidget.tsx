@@ -3,7 +3,7 @@ const portrait = "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/187922
 import { GitHubIcon, LinkedInIcon } from "@/components/BrandIcons";
 import { SITE } from "@/data/site";
 
-const TAGS = ["React", "Node.js", "SRMU '28"];
+const TAGS = ["Web", "DevOps", "SRMU '28"];
 
 export function ProfileWidget() {
   return (

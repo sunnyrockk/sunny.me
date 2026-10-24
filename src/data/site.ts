@@ -1,7 +1,7 @@
 export const SITE = {
   name: "Sunny Mall",
   short: "Sunny",
-  title: "Full-Stack Developer",
+  title: "Software Developer",
   email: "sunnypratap859@gmail.com",
   phone: "+91-9118017881",
   github: "https://github.com/sunnyrockk",
