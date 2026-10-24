@@ -140,8 +140,8 @@ export function ExperiencePage() {
 
             {bcaGrad >= from && bcaGrad < to ? (
               <div className="gantt-row gantt-allday">
-                <span className="gantt-milestone" style={{ left: `${((bcaGrad + 0.5 - from) / span) * 100}%` }} title="BCA, Chandigarh University">
-                  <GraduationCap size={13} /> BCA
+                <span className="gantt-milestone" style={{ left: `${((bcaGrad + 0.5 - from) / span) * 100}%` }} title="B.Tech, SRMU">
+                  <GraduationCap size={13} /> B.Tech
                 </span>
               </div>
             ) : null}

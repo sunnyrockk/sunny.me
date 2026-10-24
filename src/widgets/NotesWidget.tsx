@@ -2,9 +2,9 @@ import { useState } from "react";
 import { Folder } from "lucide-react";
 
 const ITEMS = [
-  { text: "Ship Infynity's web + app bits", done: false },
-  { text: "Chase calendar bugs in react-big-schedule", done: true },
-  { text: "Learn something new ☕", done: false },
+  { text: "Build TravelBoost features", done: false },
+  { text: "Continue work on Aivora", done: true },
+  { text: "Practice Data Structures & Algorithms", done: false },
 ];
 
 /** Looks like the macOS Notes widget: a checklist you can actually tick. */

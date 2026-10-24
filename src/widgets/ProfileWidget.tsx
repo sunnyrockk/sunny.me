@@ -3,13 +3,13 @@ import portrait from "@/assets/images/portrait.webp";
 import { GitHubIcon, LinkedInIcon } from "@/components/BrandIcons";
 import { SITE } from "@/data/site";
 
-const TAGS = ["Fyn Mobility", "Open Source", "BCA '26"];
+const TAGS = ["React", "Node.js", "SRMU '28"];
 
 export function ProfileWidget() {
   return (
     <article className="widget profile-widget">
       <div className="profile-photo">
-        <img src={portrait} alt="Vivek Sharma" />
+        <img src={portrait} alt="Sunny Mall" />
       </div>
       <div className="profile-info">
         <h2>{SITE.name}</h2>

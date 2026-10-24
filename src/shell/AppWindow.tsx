@@ -17,9 +17,9 @@ export function AppWindow({ title, toolbar, className = "", children }: AppWindo
   const [maximized, setMaximized] = useState(false);
 
   useEffect(() => {
-    document.title = `${title} · Vivek Sharma`;
+    document.title = `${title} · Sunny Mall`;
     return () => {
-      document.title = "Vivek Sharma - Software Engineer";
+      document.title = "Sunny Mall - Full-Stack Developer";
     };
   }, [title]);
 

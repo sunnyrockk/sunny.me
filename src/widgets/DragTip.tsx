@@ -142,7 +142,7 @@ export function PhoneTip() {
           </span>
           <div className="notif-text">
             <p className="notif-meta">
-              <span>Vivek</span>
+              <span>Sunny</span>
               <span>now</span>
             </p>
             <p className="notif-title">hey, welcome 👋</p>

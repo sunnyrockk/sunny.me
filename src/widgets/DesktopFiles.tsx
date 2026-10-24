@@ -17,10 +17,10 @@ type DesktopFile =
   | { kind: "folder"; name: string; href: string; external?: boolean };
 
 const FILES: DesktopFile[] = [
-  { kind: "image", name: "me.jpg", src: portrait, alt: "Vivek smiling outdoors" },
-  { kind: "image", name: "avatar.jpg", src: avatar, alt: "Vivek's avatar photo" },
+  { kind: "image", name: "me.jpg", src: portrait, alt: "Sunny Mall" },
+  { kind: "image", name: "avatar.jpg", src: avatar, alt: "Sunny Mall's avatar photo" },
   { kind: "pdf", name: "resume.pdf", href: SITE.resume },
-  { kind: "folder", name: "taskflow", href: "https://github.com/KEX-03/taskflow", external: true },
+  { kind: "folder", name: "TravelBoost", href: "https://github.com/sunnyrockk/Travel-boost", external: true },
   { kind: "folder", name: "projects", href: "/projects" },
 ];
 

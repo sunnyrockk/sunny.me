@@ -23,7 +23,7 @@ afterEach(() => {
 describe("routes", () => {
   it("renders the desktop at /", async () => {
     renderAt("/");
-    expect(await screen.findByRole("heading", { name: "Vivek Sharma, Software Engineer" })).toBeInTheDocument();
+    expect(await screen.findByRole("heading", { name: "Sunny Mall, Full-Stack Developer" })).toBeInTheDocument();
     expect(screen.getByRole("button", { name: "Open resume.pdf" })).toBeInTheDocument();
   });
 
@@ -50,15 +50,15 @@ describe("dock", () => {
     expect(dock.getByRole("link", { name: "Projects" })).toHaveAttribute("href", "/projects");
     expect(dock.getByRole("link", { name: "Experience" })).toHaveAttribute("href", "/experience");
     expect(dock.getByRole("link", { name: "Open Source" })).toHaveAttribute("href", "/open-source");
-    expect(dock.getByRole("link", { name: "Mail" })).toHaveAttribute("href", "mailto:viveksharma03@yahoo.com");
+    expect(dock.getByRole("link", { name: "Mail" })).toHaveAttribute("href", "mailto:sunnypratap859@gmail.com");
   });
 });
 
 describe("GitHubWidget", () => {
   it("keeps the saved snapshot when the GitHub API fails", async () => {
     render(<GitHubWidget />);
-    expect(screen.getByText("taskflow")).toBeInTheDocument();
-    expect(screen.getByText("28")).toBeInTheDocument();
+    expect(screen.getByText("Travel-boost")).toBeInTheDocument();
+    expect(screen.getByText("2")).toBeInTheDocument();
     expect(await screen.findByTitle("Saved snapshot")).toBeInTheDocument();
   });
 });

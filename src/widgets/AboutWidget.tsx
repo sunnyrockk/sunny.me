@@ -1,15 +1,14 @@
-const STACK = ["React", "Next.js", "React Native", "TypeScript", "Node.js", "Express", "MongoDB", "Firebase", "Tailwind"];
+const STACK = ["Java", "Python", "React.js", "Node.js", "Express.js", "MongoDB", "REST APIs", "Tailwind CSS"];
 
 export function AboutWidget() {
   return (
     <article className="widget about-widget">
       <p className="widget-kicker">About me</p>
       <h2>
-        Hey, I&apos;m Vivek <span className="wave" aria-hidden="true">👋</span>
+        Hey, I&apos;m Sunny <span className="wave" aria-hidden="true">👋</span>
       </h2>
       <p className="about-lede">
-        A frontend-focused software engineer who builds web and mobile apps with React, Next.js, and React Native. I care about what happens under the hood: render
-        performance, accessibility, and code that holds up as a product grows. Off the clock, you&apos;ll find me happily poking around open-source codebases.
+        A full-stack developer building responsive web applications and REST APIs with React.js, Node.js, Express.js, and MongoDB. I enjoy strengthening my problem-solving skills through Data Structures & Algorithms, OOP, and real-world software projects.
       </p>
       <div className="about-cards">
         <div className="about-card">
@@ -17,7 +16,7 @@ export function AboutWidget() {
             🔭
           </span>
           <h3>Exploring</h3>
-          <p>Mobile SDKs, render performance, and how big React codebases stay fast.</p>
+          <p>Full-stack applications, API integration, and building practical software projects.</p>
         </div>
         <div className="about-card">
           <span className="about-emoji" aria-hidden="true">
