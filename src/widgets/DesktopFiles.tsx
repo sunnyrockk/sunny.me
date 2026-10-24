@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { FileText, Folder, X } from "lucide-react";
 const portrait = "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/187922825-S7sI87KqtajWwkDhrKFgTMMv2j5ovj.png";
-import avatar from "@/assets/images/avatar.webp";
 import { SITE } from "@/data/site";
 import { DragTip, PhoneTip } from "./DragTip";
 
@@ -18,7 +17,6 @@ type DesktopFile =
 
 const FILES: DesktopFile[] = [
   { kind: "image", name: "me.jpg", src: portrait, alt: "Sunny Mall" },
-  { kind: "image", name: "avatar.jpg", src: avatar, alt: "Sunny Mall's avatar photo" },
   { kind: "pdf", name: "resume.pdf", href: SITE.resume },
   { kind: "folder", name: "TravelBoost", href: "https://github.com/sunnyrockk/Travel-boost", external: true },
   { kind: "folder", name: "projects", href: "/projects" },
