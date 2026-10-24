@@ -43,7 +43,15 @@ export type OpenSourceRepo = {
   contributions: ContributionItem[];
 };
 
-export const OPEN_SOURCE: OpenSourceRepo[] = [];
+export const OPEN_SOURCE: OpenSourceRepo[] = [
+  {
+    name: "kana-dojo",
+    repo: "sunnyrockk/kana-dojo",
+    url: "https://github.com/sunnyrockk/kana-dojo",
+    blurb: "A fork of kana-dojo.",
+    contributions: [],
+  },
+];
 
 export const EDUCATION = [
   { degree: "B.Tech in Computer Science & Engineering", school: "Shri Ramswaroop Memorial University (SRMU), Lucknow", date: "2024–2028" },
