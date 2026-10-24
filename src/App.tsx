@@ -5,6 +5,7 @@ import { MenuBar } from "@/shell/MenuBar";
 import { Dock } from "@/shell/Dock";
 import { HomePage } from "@/pages/HomePage";
 import { NotFoundPage } from "@/pages/NotFoundPage";
+import { PortfolioChatbot } from "@/widgets/PortfolioChatbot";
 
 const ProjectsPage = lazy(() => import("@/pages/ProjectsPage").then((m) => ({ default: m.ProjectsPage })));
 const ExperiencePage = lazy(() => import("@/pages/ExperiencePage").then((m) => ({ default: m.ExperiencePage })));
@@ -40,6 +41,7 @@ export function DesktopShell() {
         <DesktopRoutes />
       </main>
       <Dock />
+      <PortfolioChatbot />
     </div>
   );
 }
