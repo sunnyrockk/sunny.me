@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef, useState, type RefObject } from "react"
 import { useNavigate } from "react-router-dom";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { FileText, Folder, X } from "lucide-react";
-const portrait = "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/187922825-tbnm3Z6jMmSrGnMisOCuDwKuBr9s1p.png";
+const portrait = "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-10-24%20at%208.15.41%E2%80%AFPM-QTBWrtk6Qpvl7ryGuqK5KE30SCBeQr.png";
 import avatar from "@/assets/images/avatar.webp";
 import { SITE } from "@/data/site";
 import { DragTip, PhoneTip } from "./DragTip";
